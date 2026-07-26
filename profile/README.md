@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://zoff.me">
-    <img src="./assets/logo.png" alt="Zoff" width="152">
+    <img src="./assets/logo.png" alt="Zoff" width="152" height="152">
   </a>
 </p>
 
@@ -16,8 +16,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/frontpage.png" alt="Create or join a Zoff room" width="49%">
-  <img src="./assets/playlist.png" alt="A shared playlist room in Zoff" width="49%">
+  <img src="./assets/screenshots.png" alt="Create a Zoff room and listen together" width="1440" height="450">
 </p>
 
 Rooms stay in sync in real time, with collaborative queues, voting, and Google
