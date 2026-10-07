@@ -1,63 +1,72 @@
 <p align="center">
   <a href="https://zoff.me">
-    <img src="https://raw.githubusercontent.com/zoff-music/.github/main/profile/assets/logo.png" alt="Zoff" width="152" height="152">
+    <img src="https://raw.githubusercontent.com/zoff-music/.github/main/profile/assets/header.webp" alt="Zoff: Listen. Watch. Together. Your people, one shared room." width="1920" height="823">
   </a>
 </p>
 
-<h1 align="center">Listen together with Zoff</h1>
+<h1 align="center">Your people. One shared room.</h1>
 
 <p align="center">
-  Zoff is free shared listening for YouTube and SoundCloud.
-  Start a room, invite your friends, and build the queue together. No account needed.
+  Listen to music together or settle in for a watch party.<br>
+  Share a link, build the queue, and enjoy it together.<br>
+  <strong>Always free. No Zoff account needed.</strong>
 </p>
 
 <p align="center">
-  <a href="https://zoff.me"><strong>Open Zoff</strong></a>
+  <a href="https://zoff.me/features/music"><strong>Listen together</strong></a> ·
+  <a href="https://zoff.me/features/watch"><strong>Watch together</strong></a> ·
+  <a href="https://zoff.me/discovery/apps">Get the apps</a> ·
+  <a href="https://x.com/zoffmusic">Follow on X</a>
 </p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/zoff-music/.github/main/profile/assets/frontpage.jpg" alt="Start a free Zoff room with YouTube and SoundCloud" width="640" height="450">
-  <img src="https://raw.githubusercontent.com/zoff-music/.github/main/profile/assets/playlist.jpg" alt="Zoff's room player and shared queue with song voting" width="640" height="450">
-</p>
+## Two ways to spend time together
 
-## One room, everyone's music
+**Music rooms** bring YouTube and SoundCloud into a shared music queue. Add your
+favorites, import a playlist, vote on the next track, or turn an idea into a queue
+with AI-assisted discovery.
 
-- Build a shared queue, import playlists, and vote on what plays next.
-- Listen together with server-controlled playback or let a host take control.
-- Chat and see room activity, or switch chat off on your device.
-- Start a playlist from an idea with prompt-based music discovery.
-- Share a room link or QR code, embed a player, or pair a remote controller.
-- Browse public rooms or keep a room link private. Each room has its own
-  settings and optional administrator password, not a required Zoff account.
+**Watch rooms** are for watching YouTube videos together. The host controls
+playback and seeking, while everyone can add videos, vote, and chat. Watch rooms
+search beyond music, so the queue can follow whatever you're into.
 
-Zoff is always free to use. Playback uses the official YouTube and SoundCloud
-players, with availability and playback restrictions set by those providers.
+## Make the room yours
 
-## Listen on your screen
+- **One shared queue.** Add items, vote, and see changes arrive in real time.
+- **Keep the conversation going.** Chat and room activity sit alongside playback.
+  Prefer just the queue? Switch chat off on your device.
+- **Set the rules per room.** Choose who can add items, how skipping works, and
+  whether played items stay in the queue. Optional administrator passwords
+  protect room controls without requiring an account.
+- **Bring your people.** Share a link or QR code, browse public rooms, or leave
+  your room unlisted.
+- **Use the screen that fits.** Open a party or cinema screen, cast to a TV,
+  pair your phone as a remote, or embed a room on your own site.
 
-The project includes the main web app, protected administration, an embeddable
-player, a paired web remote, and a Chromecast receiver. Native mobile supports
-iOS and Android phones and tablets. The TV app has Android TV and Samsung Tizen
-delivery targets. Controls and features adapt to each runtime.
+Playback uses the official provider players. Embedding, age, country, and
+autoplay restrictions still apply; Zoff does not bypass them.
 
-[Explore Zoff](https://zoff.me/discover/listen-together) ·
-[Apps and devices](https://zoff.me/discover/apps) ·
-[Create a room](https://zoff.me/rooms/create)
+## From your phone to the big screen
+
+Use Zoff in your browser or on iOS and Android phones and tablets. The TV app
+targets Android TV and Samsung Tizen, with a Chromecast receiver and a paired
+web remote for shared-screen playback.
+
+[Apps and devices](https://zoff.me/discovery/apps) · [Browse music rooms](https://zoff.me/rooms/explore?live=false) · [Browse watch rooms](https://zoff.me/rooms/explore?type=watch&live=false)
 
 ## Built in the open
 
-| Repository | What lives here |
+| Repository | What's inside |
 | --- | --- |
-| [vibes-frontend](https://github.com/zoff-music/vibes-frontend) | Seven apps, typed API access, compiled validation schemas, shared state, and web/native UI |
-| [vibes-backend](https://github.com/zoff-music/vibes-backend) | Go APIs, replayable incremental SSE, room permissions, provider integrations, and scheduled workers |
+| [vibes-frontend](https://github.com/zoff-music/vibes-frontend) | Web, mobile, TV, Cast, embeds, remote control, and administration, with shared typed APIs and platform-specific UI |
+| [vibes-backend](https://github.com/zoff-music/vibes-backend) | Go APIs, Music/Watch room rules, provider integrations, replayable SSE updates, and background workers |
 | [vibes-migrator](https://github.com/zoff-music/vibes-migrator) | PostgreSQL migration history and generated database documentation |
-| [.github](https://github.com/zoff-music/.github) | This organization profile and its shared presentation assets |
 
-The backend coordinates PostgreSQL state and Redis-backed event delivery;
-clients share contracts without sharing platform-specific UI. Schema changes
-live in the migrator rather than being applied by the API at startup.
+PostgreSQL holds room state; Redis supports caching and real-time event delivery.
+Versioned APIs keep the different clients working together as Zoff evolves.
 
-Read the [architecture](https://github.com/zoff-music/vibes-backend/blob/main/docs/ARCHITECTURE.md)
+Explore the [backend architecture](https://github.com/zoff-music/vibes-backend/blob/main/docs/ARCHITECTURE.md)
 and [application flows](https://github.com/zoff-music/vibes-backend/blob/main/docs/FLOWS.md)
 for the full picture. Each repository's README covers setup, checks, and
 contribution boundaries.
+
+[Privacy](https://zoff.me/privacy-policy) · [Terms](https://zoff.me/terms-of-service) · [Security](https://zoff.me/security)
